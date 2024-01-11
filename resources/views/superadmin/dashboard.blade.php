@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
@@ -20,12 +21,13 @@
         color: #B2B2B2;
         font-size: 1.2rem;
     }
-    .nav-link:hover{
+    .nav-link:hover,
+    .nav-link:active{
         color: #ffffff;
     }
 </style>
 <body>
-    <div class="">
+    <div class="grid">
         <!--Sidebar-->
             <div class="col h-full" style="height: 100vh; width: 350px; background-color:#2B2D37; position: fixed;">
                 <div  class="d-flex align-items-center">
@@ -35,9 +37,9 @@
                         <span>Employee Travel Order System</span>
                     </div>
                 </div>
-                <nav style="margin-top: 70px">
+                <aside style="margin-top: 70px" >
                     <ul class="list-group">
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link" ><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                        <li class="p-3"><a href="#" class="text-decoration-none nav-link active"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
                         <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-file-blank'></i> Request</a></li>
                         <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-map' ></i> Travel Orders</a></li>
                         <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-user'></i> Employees</a></li>
@@ -58,10 +60,14 @@
                         </li>
                         
                     </ul>
-                    
-                    
-                </nav>
+                </aside>
             </div>
+            <nav class="bg-primary">
+                fghsfg
+            </nav>
+            <main class="h-full bg-warning" style="height: 100vh">
+                asdfasdf
+            </main>
     </div>
 </body>
 </html>
