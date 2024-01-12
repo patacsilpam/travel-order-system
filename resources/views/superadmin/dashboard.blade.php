@@ -16,16 +16,16 @@
         <!--Sidebar-->
         <aside class="sidebar text-white ">
             <div class="d-flex flex-row align-items-center p-2">
-                    <img src="images/logo.png" alt="NCIP Logo" class="img-logo">
+                    <img src="images/logo.png" alt="NCIP Logo" class="img-logo p-1">
                     <div class="d-none d-md-flex flex-column ">
                         <small>NCIP R1</small>
                         <small>Employee Travel Order System</small>
                     </div>
             </div>
-            <ul class="list-group ul-list mt-5 text-lg">
+            <ul class="list-group ul-list mt-5">
                 <li class="p-3">
                     <i class='bx bxs-dashboard'></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex "> Dashboard</a>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex">Dashboard</a>
                 </li>
                 <li class="p-3">
                     <i class='bx bxs-file-blank'></i>
