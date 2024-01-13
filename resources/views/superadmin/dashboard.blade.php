@@ -51,11 +51,10 @@
                     <i class='bx bxs-user'></i>
                     <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Users</a>
                 </li>
-                <li class="p-3">
+                <li class="p-3" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
                     <i class='bx bxs-cog' ></i>
-                    <a class="text-decoration-none nav-link d-none d-md-flex" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
-                         Settings <i class='bx bxs-down-arrow' style="margin-left: 170px;"></i>
-                    </a>
+                    <a class="text-decoration-none nav-link d-none d-md-flex">Settings </a>
+                    <i class='bx bxs-down-arrow' style="margin-left: 170px;"></i>
                 </li>
                 <div class="collapse multi-collapse" id="settingsCollapse">
                     <ul class="list-group mt-2">
