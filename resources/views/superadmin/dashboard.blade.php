@@ -16,7 +16,7 @@
         <!--Sidebar-->
         <aside class="sidebar text-white ">
             <div class="d-flex flex-row align-items-center p-2">
-                    <img src="images/logo.png" alt="NCIP Logo" class="img-logo p-1">
+                    <img src="/images/logo.png" alt="NCIP Logo" class="img-logo p-1">
                     <div class="d-none d-md-flex flex-column ">
                         <small>NCIP R1</small>
                         <small>Employee Travel Order System</small>
@@ -56,14 +56,14 @@
                     <a class="text-decoration-none nav-link d-none d-md-flex" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
                          Settings <i class='bx bxs-down-arrow' style="margin-left: 170px;"></i>
                     </a>
-                    <div class="collapse multi-collapse" id="settingsCollapse">
-                        <ul class="list-group mt-2">
-                            <li class="p-2"><a href="#" class="text-decoration-none text-white">Station</a></li>
-                            <li class="p-2"><a href="#" class="text-decoration-none text-white">Position</a></li>
-                            <li class="p-2"><a href="#" class="text-decoration-none text-white">Role</a></li>
-                        </ul>
-                    </div>
                 </li>
+                <div class="collapse multi-collapse" id="settingsCollapse">
+                    <ul class="list-group mt-2">
+                        <li class="p-2"><a href="#" class="text-decoration-none text-white">Station</a></li>
+                        <li class="p-2"><a href="#" class="text-decoration-none text-white">Position</a></li>
+                        <li class="p-2"><a href="#" class="text-decoration-none text-white">Role</a></li>
+                    </ul>
+                </div>
             </ul>
         </aside>
         <nav class="nav">
