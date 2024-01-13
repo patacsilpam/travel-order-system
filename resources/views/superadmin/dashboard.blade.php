@@ -7,51 +7,71 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/design/admin-design.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
 </head>
 <body>
     <div class="grid-container">
         <!--Sidebar-->
-            <div class="col h-full" style="height: 100vh; width: 350px; background-color:#2B2D37; position: fixed;">
-                <div  class="d-flex align-items-center">
-                    <img src="/images/logo.png" alt="NCIP LOGO" class="p-2 h-50">
-                    <div class="d-flex flex-column  text-white">
-                        <span>NCIP R1</span>
-                        <span>Employee Travel Order System</span>
+        <aside class="sidebar text-white ">
+            <div class="d-flex flex-row align-items-center p-2">
+                    <img src="images/logo.png" alt="NCIP Logo" class="img-logo p-1">
+                    <div class="d-none d-md-flex flex-column ">
+                        <small>NCIP R1</small>
+                        <small>Employee Travel Order System</small>
                     </div>
-                </div>
-                <aside style="margin-top: 70px" >
-                    <ul class="list-group">
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link active"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-file-blank'></i> Request</a></li>
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-map' ></i> Travel Orders</a></li>
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-user'></i> Employees</a></li>
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-user'></i> Officials</a></li>
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bx-building' ></i> Divisions</a></li>
-                        <li class="p-3"><a href="#" class="text-decoration-none nav-link"><i class='bx bxs-user'></i> Users</a></li>
-                        <li class="p-3">
-                            <a class=" text-decoration-none nav-link" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
-                                <i class='bx bxs-cog' ></i> Settings <i class='bx bxs-down-arrow' style="margin-left: 170px;"></i>
-                            </a>
-                            <div class="collapse multi-collapse" id="settingsCollapse">
-                                <ul class="list-group mt-2">
-                                    <li class="p-2"><a href="#" class="text-decoration-none text-white">Station</a></li>
-                                    <li class="p-2"><a href="#" class="text-decoration-none text-white">Position</a></li>
-                                    <li class="p-2"><a href="#" class="text-decoration-none text-white">Role</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </aside>
             </div>
-            <nav class="bg-primary">
-                fghsfg
-            </nav>
-            <main class="h-full bg-warning" style="height: 100vh">
-                asdfasdf
-            </main>
+            <ul class="list-group ul-list mt-5">
+                <li class="p-3">
+                    <i class='bx bxs-dashboard'></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex">Dashboard</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bxs-file-blank'></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Request</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bxs-map' ></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Travel Orders</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bxs-user'></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Employees</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bxs-user'></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Officials</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bx-building' ></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Divisions</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bxs-user'></i>
+                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Users</a>
+                </li>
+                <li class="p-3">
+                    <i class='bx bxs-cog' ></i>
+                    <a class="text-decoration-none nav-link d-none d-md-flex" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
+                         Settings <i class='bx bxs-down-arrow' style="margin-left: 170px;"></i>
+                    </a>
+                    <div class="collapse multi-collapse" id="settingsCollapse">
+                        <ul class="list-group mt-2">
+                            <li class="p-2"><a href="#" class="text-decoration-none text-white">Station</a></li>
+                            <li class="p-2"><a href="#" class="text-decoration-none text-white">Position</a></li>
+                            <li class="p-2"><a href="#" class="text-decoration-none text-white">Role</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+        <nav class="nav">
+            Navbar
+        </nav>
+        <main class="main">
+            main
+        </main>
     </div>
 </body>
 </html>
