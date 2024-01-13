@@ -54,7 +54,7 @@
                 <li class="p-3" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
                     <i class='bx bxs-cog' ></i>
                     <a class="text-decoration-none nav-link d-none d-md-flex">Settings </a>
-                    <i class='bx bxs-down-arrow' style="margin-left: 170px;"></i>
+                    <i class='bx bxs-down-arrow d-none d-md-flex' style="margin-left: 170px;"></i>
                 </li>
                 <div class="collapse multi-collapse" id="settingsCollapse">
                     <ul class="list-group mt-2">
