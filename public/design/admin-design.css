@@ -27,6 +27,9 @@
     align-items: center;
     justify-content: center;
 }
+.ul-list>li:hover{
+    background: #bcbcbc33;
+}
 .nav{
     grid-area: nav;
     background: #FFFFFF;

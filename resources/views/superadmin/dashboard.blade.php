@@ -65,8 +65,14 @@
                 </div>
             </ul>
         </aside>
-        <nav class="nav">
-            Navbar
+        <nav class="nav d-flex flex-row justify-content-between align-items-center p-3">
+            <div class="menu-bar">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="profile  d-flex flex-row align-items-center">
+                <img src="/images/logo.png" alt="Profile pic" style="height: 25px;">
+                <span>Juan Dela Cruz</span>
+            </div>
         </nav>
         <main class="main">
             main
