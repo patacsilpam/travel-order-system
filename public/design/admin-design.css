@@ -21,14 +21,15 @@
 .sidebar > .ul-list{
     color: #BCBCBC;
 }
-.ul-list>li{
+
+.ul-list>li:hover{
+    background: #bcbcbc33;
+}
+.ul-list>li>a{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-.ul-list>li:hover{
-    background: #bcbcbc33;
 }
 .nav{
     grid-area: nav;
@@ -43,10 +44,7 @@
     .img-logo{
         height: 70px;
     }
-    .ul-list>li{
-        justify-content: start;
-    }
     .ul-list>li>a{
-        margin-left: 10px;
+        justify-content: start;
     }
 }

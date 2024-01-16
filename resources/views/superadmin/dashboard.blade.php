@@ -15,64 +15,10 @@
     <div class="grid-container">
         <!--Sidebar-->
         <aside class="sidebar text-white ">
-            <div class="d-flex flex-row align-items-center p-2">
-                    <img src="/images/logo.png" alt="NCIP Logo" class="img-logo p-1">
-                    <div class="d-none d-md-flex flex-column ">
-                        <small>NCIP R1</small>
-                        <small>Employee Travel Order System</small>
-                    </div>
-            </div>
-            <ul class="list-group ul-list mt-5">
-                <li class="p-3">
-                    <i class='bx bxs-dashboard'></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex">Dashboard</a>
-                </li>
-                <li class="p-3">
-                    <i class='bx bxs-file-blank'></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Request</a>
-                </li>
-                <li class="p-3">
-                    <i class='bx bxs-map' ></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Travel Orders</a>
-                </li>
-                <li class="p-3">
-                    <i class='bx bxs-user'></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Employees</a>
-                </li>
-                <li class="p-3">
-                    <i class='bx bxs-user'></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Officials</a>
-                </li>
-                <li class="p-3">
-                    <i class='bx bx-building' ></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Divisions</a>
-                </li>
-                <li class="p-3">
-                    <i class='bx bxs-user'></i>
-                    <a href="#" class="text-decoration-none nav-link d-none d-md-flex"> Users</a>
-                </li>
-                <li class="p-3" data-bs-toggle="collapse" href="#settingsCollapse" role="button" aria-expanded="false" aria-controls="settingsCollapse">
-                    <i class='bx bxs-cog' ></i>
-                    <a class="text-decoration-none nav-link d-none d-md-flex">Settings </a>
-                    <i class='bx bxs-down-arrow d-none d-md-flex' style="margin-left: 170px;"></i>
-                </li>
-                <div class="collapse multi-collapse" id="settingsCollapse">
-                    <ul class="list-group mt-2">
-                        <li class="p-2"><a href="#" class="text-decoration-none text-white">Station</a></li>
-                        <li class="p-2"><a href="#" class="text-decoration-none text-white">Position</a></li>
-                        <li class="p-2"><a href="#" class="text-decoration-none text-white">Role</a></li>
-                    </ul>
-                </div>
-            </ul>
+            @include('includes.superadmin.sidebar')
         </aside>
         <nav class="nav d-flex flex-row justify-content-between align-items-center p-3">
-            <div class="menu-bar">
-                <i class='bx bx-menu'></i>
-            </div>
-            <div class="profile  d-flex flex-row align-items-center">
-                <img src="/images/logo.png" alt="Profile pic" style="height: 25px;">
-                <span>Juan Dela Cruz</span>
-            </div>
+            @include('includes.superadmin.navbar')
         </nav>
         <main class="main">
             main
