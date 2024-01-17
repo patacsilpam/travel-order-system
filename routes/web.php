@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/superadmin/dashboard', function () {
     return view('superadmin.dashboard');
 });
+
+Route::get('/superadmin/users', function () {
+    return view('superadmin.users');
+});
