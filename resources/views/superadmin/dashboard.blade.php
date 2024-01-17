@@ -21,7 +21,7 @@
             @include('includes.superadmin.navbar')
         </nav>
         <main class="main">
-            main
+            
         </main>
     </div>
 </body>
