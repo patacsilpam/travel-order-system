@@ -66,7 +66,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ##Cloning laravel project from github
-1.Run git clone <my-cool-project>
+1.Run git clone <my-cool-project> <br/>
 2.Run composer install
 3.Run cp .env.example .env
 4.Run php artisan key:generate
