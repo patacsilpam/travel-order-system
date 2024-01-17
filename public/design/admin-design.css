@@ -18,12 +18,17 @@
     background: #2B2D37;
     grid-area: sidebar;
 }
-.sidebar > .ul-list{
+.sidebar > .ul-list, .ul-list>li>a>span{
     color: #BCBCBC;
 }
 
 .ul-list>li:hover{
     background: #bcbcbc33;
+    color: #FFFFFF;
+}
+.ul-list>li.active{
+    background: #bcbcbc33;
+    color: #FFFFFF;
 }
 .ul-list>li>a{
     display: flex;
@@ -39,6 +44,9 @@
 .main{
     grid-area: main;
     background: #F8FAFB;
+}
+.inner-card.active{
+    display: none;
 }
 @media (min-width: 768px) {
     .img-logo{
