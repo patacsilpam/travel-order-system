@@ -1,4 +1,4 @@
-<div class="p-2">
+<div class="p-2 relative">
     <div>
         <h1>Users</h1>
     </div>
