@@ -37,8 +37,8 @@
                     <div class="form-group my-2">
                         <label for="user-division">Division</label>
                         <select class="form-control" id="user-division">
-                            <option value="None">None</option>
-                            <option value="CDO">CDO</option>
+                            <option selected disabled>Please select</option>
+                            <option value="Empoyee">Empoyee</option>
                             <option value="Provincial Officer">Provincial Officer</option>
                             <option value="AFSD Chief">AFSD Chief</option>
                             <option value="TMSD Chief">TMSD Chief</option>
