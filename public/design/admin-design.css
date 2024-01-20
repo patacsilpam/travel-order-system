@@ -48,6 +48,12 @@
 .inner-card.active{
     display: none;
 }
+.btn-cancel{
+    border:1px solid #ccccccec;
+}
+.btn-cancel:hover{
+    background: #cdcdd2ec;
+}
 @media (min-width: 768px) {
     .img-logo{
         height: 70px;
