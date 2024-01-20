@@ -55,8 +55,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn text-white" style="background:#3354F4;">Save</button>
+                    <button type="button" class="btn btn-cancel text-muted" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn text-white" style="background:#3BC77C;">Save Changes</button>
                 </div>
             </form>
         </div>
