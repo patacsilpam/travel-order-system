@@ -4,7 +4,7 @@
     </div>
     <!-- Button trigger modal -->
     <div class="d-flex justify-content-end">
-        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#addUser" style="background:#3354F4"><i class='bx bx-plus'></i> Add User</button>
+        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#addUser" style="background:#3354F4"><i class='bx bx-plus'></i> User</button>
         @include('modals/superadmin/add-user')
     </div>
     <table id="example" class="table table-striped" style="width:100%">
