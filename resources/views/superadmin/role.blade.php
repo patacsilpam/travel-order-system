@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/design/admin-design.css">
-    <title>Position</title>
+    <title>Role</title>
 </head>
 <body>
     <div class="grid-container">
@@ -28,7 +28,7 @@
             @include('includes.superadmin.navbar')
         </nav>
         <main class="main">
-            @include('pages.superadmin.position-page')
+            @include('pages.superadmin.role-page')
         </main>
     </div>
 </body>
