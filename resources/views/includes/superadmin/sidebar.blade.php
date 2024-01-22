@@ -60,7 +60,7 @@
         <ul class="list-group mt-2 ul-list ">
             <li class="p-2"><a href="#" class="text-decoration-none text-white" title="Station">Station</a></li>
             <li class="p-2"><a href="{{ url('/superadmin/settings/position') }}" class="text-decoration-none text-white" title="Position">Position</a></li>
-            <li class="p-2"><a href="#" class="text-decoration-none text-white" title="Role">Role</a></li>
+            <li class="p-2"><a href="{{ url('/superadmin/settings/role') }}" class="text-decoration-none text-white" title="Role">Role</a></li>
         </ul>
     </div>
 </ul>
