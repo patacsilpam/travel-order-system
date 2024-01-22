@@ -24,3 +24,7 @@ Route::get('/superadmin/users', function () {
 Route::get('/superadmin/settings/position', function () {
     return view('superadmin.position');
 });
+
+Route::get('/superadmin/settings/role', function () {
+    return view('superadmin.role');
+});
