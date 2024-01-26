@@ -21,6 +21,10 @@ Route::get('/superadmin/users', function () {
     return view('superadmin.users');
 });
 
+Route::get('/superadmin/settings/divisions', function () {
+    return view('superadmin.divisions');
+});
+
 Route::get('/superadmin/settings/position', function () {
     return view('superadmin.position');
 });
