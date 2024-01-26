@@ -14,31 +14,31 @@
         </a>
     </li>
     <li class="p-3">
-        <a href="#request" class="text-decoration-none nav-link" title="Request"> 
+        <a href="{{ url('/superadmin/travel-requests') }}" class="text-decoration-none nav-link" title="Request"> 
             <i class='bx bxs-file-blank'></i>
-            <span class="d-none d-md-flex mx-2">Request</span>
+            <span class="d-none d-md-flex mx-2">Requests</span>
         </a>
     </li>
     <li class="p-3">
-        <a href="#to" class="text-decoration-none nav-link" title="Travel Orders"> 
+        <a href="{{ url('/superadmin/travel-orders') }}" class="text-decoration-none nav-link" title="Travel Orders"> 
             <i class='bx bxs-map'></i>
             <span class="d-none d-md-flex mx-2">Travel Orders</span>
         </a>
     </li>
     <li class="p-3">
-        <a href="#employees" class="text-decoration-none nav-link" title="Employees">
+        <a href="{{ url('/superadmin/employee') }}" class="text-decoration-none nav-link" title="Employees">
             <i class='bx bxs-user'></i>
             <span class=" d-none d-md-flex mx-2">Employees</span>
         </a>
     </li>
     <li class="p-3">
-        <a href="#officials" class="text-decoration-none nav-link" title="Officials">
+        <a href="{{ url('/superadmin/officials') }}" class="text-decoration-none nav-link" title="Officials">
             <i class='bx bxs-user'></i> 
             <span class="d-none d-md-flex mx-2">Officials</span>
         </a>
     </li>
     <li class="p-3">
-        <a href="{{ url('/superadmin/settings/divisions') }}" class="text-decoration-none nav-link" title="Divisions">
+        <a href="{{ url('/superadmin/divisions') }}" class="text-decoration-none nav-link" title="Divisions">
             <i class='bx bx-building'></i> 
             <span class="d-none d-md-flex mx-2">Divisions</span>
         </a>
