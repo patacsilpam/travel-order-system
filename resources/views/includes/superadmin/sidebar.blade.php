@@ -38,7 +38,7 @@
         </a>
     </li>
     <li class="p-3">
-        <a href="#division" class="text-decoration-none nav-link" title="Divisions">
+        <a href="{{ url('/superadmin/settings/divisions') }}" class="text-decoration-none nav-link" title="Divisions">
             <i class='bx bx-building'></i> 
             <span class="d-none d-md-flex mx-2">Divisions</span>
         </a>
