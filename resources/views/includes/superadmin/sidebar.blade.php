@@ -58,15 +58,15 @@
     </li>
     <div class="collapse multi-collapse" id="settingsCollapse">
         <ul class="list-group mt-2 ul-list ">
-            <li class="p-2"><a href="#" class="text-decoration-none text-white" title="Station">Station</a></li>
+            <li class="p-2"><a href="#station" class="text-decoration-none text-white" data-toggle="modal" data-target="#editStation" title="Station">Station</a></li>
             <li class="p-2"><a href="{{ url('/superadmin/settings/position') }}" class="text-decoration-none text-white" title="Position">Position</a></li>
             <li class="p-2"><a href="{{ url('/superadmin/settings/role') }}" class="text-decoration-none text-white" title="Role">Role</a></li>
         </ul>
     </div>
-</ul>
+</ul> 
 <script>
         $(document).ready(function () {
             // If you want to remove the "active" class from all li elements on page load
             $('li').removeClass('active');
         });
-    </script>
+</script>

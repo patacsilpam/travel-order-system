@@ -43,6 +43,7 @@ Route::get('/superadmin/users', function () {
     return view('superadmin.users');
 });
 
+
 Route::get('/superadmin/settings/position', function () {
     return view('superadmin.position');
 });
