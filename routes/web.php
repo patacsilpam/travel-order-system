@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/superadmin/login', function () {
+    return view('superadmin.login');
+});
+
 
 Route::get('/superadmin/dashboard', function () {
     return view('superadmin.dashboard');
