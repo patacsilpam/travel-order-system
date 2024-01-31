@@ -9,51 +9,54 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Login</title>
 </head>
-<body>
-    <div class="container">
-        <div class="d-flex flex-row text-white" style="background: #2B2D37;">
+<body class="p-2" style="background:#FAFAFA">
+    <div class="sm:50 w-25 mt-5 rounded" style="border: 1px solid #D6D6D6;">
+        <div class="d-flex flex-row rounded-top text-white p-2" style="background: #2B2D37;">
             <div>
                 <img src="/images/logo.png" alt="">
             </div>
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column ml-2">
                 <span class="">National Commission on Indigenous Peoples Region 1</span>
                 <strong>EMPLOYEE TRAVEL ORDER SYSTEM</strong>
             </div>
         </div>
 
         <div>
-            <h1>Login</h1>
-            <form action="">
-                <div class="form-group">
-                    <label for="emailaddress">Email address</label>
-                    <input type="email" class="form-control" id="emailaddress" aria-describedby="emailAddress" placeholder="Enter email address">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
-                </div>
-
-                <div class="form-group">
-                    <label for="office">Office</label>
-                    <select class="form-control" id="office">
-                        <option disabled selected>Select Office</option>
-                        <option value="Regional Office - ORD">Regional Office - ORD</option>
-                        <option value="Regional Office - TMSD">Regional Office - TMSD</option>
-                        <option value="Regional Office - AFSD">Regional Office - AFSD</option>
-                        <option value="Ilocos Norte Provincial Office">Ilocos Norte Provincial Office</option>
-                        <option value="Dingras CSC">Dingras CSC</option>
-                        <option value="Ilocos Sur Provincial Office">Ilocos Sur Provincial Office</option>
-                        <option value="Banayoyo CSC">Banayoyo CSC</option>
-                        <option value="Tagudin CSC">Tagudin CSC</option>
-                        <option value="Sudipen CSC">Sudipen CSC</option>
-                        <option value="Pugo CSC">Pugo CSC</option>
-                        <option value="Pangasinan Provincial Office">Pangasinan Provincial Office</option>
-                        <option value="Sison CSC">Sison CSC</option>
-                        <option value="Urdaneta CSC">Urdaneta CSC</option>
-                    </select>
-                  </div>
-            </form>
+            <h1 class="text-center">Sign In</h1>
+            <div class="p-2">
+                <form action="">
+                    <div class="form-group">
+                        <label for="emailaddress">Email address</label>
+                        <input type="email" class="form-control" id="emailaddress" aria-describedby="emailAddress" placeholder="Enter email address">
+                    </div>
+    
+                    <div class="form-group my-2">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="office">Office</label>
+                        <select class="form-control" id="office">
+                            <option disabled selected>Select Office</option>
+                            <option value="Regional Office - ORD">Regional Office - ORD</option>
+                            <option value="Regional Office - TMSD">Regional Office - TMSD</option>
+                            <option value="Regional Office - AFSD">Regional Office - AFSD</option>
+                            <option value="Ilocos Norte Provincial Office">Ilocos Norte Provincial Office</option>
+                            <option value="Dingras CSC">Dingras CSC</option>
+                            <option value="Ilocos Sur Provincial Office">Ilocos Sur Provincial Office</option>
+                            <option value="Banayoyo CSC">Banayoyo CSC</option>
+                            <option value="Tagudin CSC">Tagudin CSC</option>
+                            <option value="Sudipen CSC">Sudipen CSC</option>
+                            <option value="Pugo CSC">Pugo CSC</option>
+                            <option value="Pangasinan Provincial Office">Pangasinan Provincial Office</option>
+                            <option value="Sison CSC">Sison CSC</option>
+                            <option value="Urdaneta CSC">Urdaneta CSC</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="mt-3 btn w-100 text-white" name="btn-login" style="background:#3354F4"><strong>Login</strong></button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
