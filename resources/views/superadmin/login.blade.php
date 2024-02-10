@@ -7,38 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/design/admin-design.css">
     <title>Login</title>
 </head>
 <body class="p-2" style="background:#FAFAFA">
-    <div class="position-absolute top-50 start-50 translate-middle">
+    <div class="position-absolute top-50 start-50 translate-middle login-form">
         <div class=" mt-5 rounded" style="border: 1px solid #D6D6D6;">
             <div class="d-flex flex-row rounded-top text-white p-2" style="background: #2B2D37;">
                 <div>
                     <img src="/images/logo.png" alt="">
                 </div>
-                <div class="d-flex flex-column ml-2">
+                <div class="d-flex flex-column ml-2 p-2">
                     <span class="">National Commission on Indigenous Peoples Region 1</span>
                     <strong>EMPLOYEE TRAVEL ORDER SYSTEM</strong>
                 </div>
             </div>
 
-            <div>
+            <div class="p-2">
                 <h1 class="text-center">Sign In</h1>
-                <div class="p-2">
+                <div >
                     <form action="">
-                        <div class="form-group">
+                        <div class="form-group my-3">
                             <label for="emailaddress">Email address</label>
-                            <input type="email" class="form-control" id="emailaddress" aria-describedby="emailAddress" placeholder="Enter email address">
+                            <input type="email" class="form-control mt-1" id="emailaddress" aria-describedby="emailAddress" placeholder="Enter email address">
                         </div>
         
-                        <div class="form-group my-2">
+                        <div class="form-group my-3">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
+                            <input type="password" class="form-control mt-1" id="password" aria-describedby="password" placeholder="Enter password">
                         </div>
         
-                        <div class="form-group">
+                        <div class="form-group my-3">
                             <label for="office">Office</label>
-                            <select class="form-control" id="office">
+                            <select class="form-control mt-1" id="office">
                                 <option disabled selected>Select Office</option>
                                 <option value="Regional Office - ORD">Regional Office - ORD</option>
                                 <option value="Regional Office - TMSD">Regional Office - TMSD</option>
