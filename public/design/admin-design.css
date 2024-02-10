@@ -54,11 +54,18 @@
 .btn-cancel:hover{
     background: #cdcdd2ec;
 }
+.login-form{
+    width:100%;
+    padding: 10px;
+}
 @media (min-width: 768px) {
     .img-logo{
         height: 70px;
     }
     .ul-list>li>a{
         justify-content: start;
+    }
+    .login-form{
+        width:40%;
     }
 }
