@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Superadmin\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,10 +43,10 @@ Route::get('/superadmin/officials', function () {
     return view('superadmin.official');
 });
 
-Route::get('/superadmin/users', function () {
+/*Route::get('/superadmin/users', function () {
     return view('superadmin.users');
-});
-
+});*/
+Route::get('/superadmin/users', [UserController::class, 'show']);
 
 Route::get('/superadmin/settings/position', function () {
     return view('superadmin.position');
