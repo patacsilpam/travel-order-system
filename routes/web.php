@@ -47,6 +47,7 @@ Route::get('/superadmin/officials', function () {
     return view('superadmin.users');
 });*/
 Route::get('/superadmin/users', [UserController::class, 'show']);
+Route::post('/superadmin/users', [UserController::class, 'show']);
 
 Route::get('/superadmin/settings/position', function () {
     return view('superadmin.position');
