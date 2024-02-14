@@ -6,7 +6,8 @@
                 <h5 class="modal-title" id="addUser">Add User</h5>
                 <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close"><span class="bg-danger rounded text-white py-1 px-2" aria-hidden="true">&times;</span></button>
             </div>
-            <form>
+            <form action="{{ url('/superadmin/users') }}" method="POST">
+                @csrf
                 <div class="modal-body">
                     <strong style="color:#3354F4; font-size:1.1rem">Personal Details</strong>
                     <div class="form-group my-2">
