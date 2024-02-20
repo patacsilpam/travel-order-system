@@ -16,14 +16,14 @@ class UserController extends Controller
     public function store(Request $request){
 
         $user = new User;
-        $fname = $request->input('fname');
-        $lname = $request->input('lname');
-        $email = $request->input('email');
-        $position = $request->input('position');
-        $role = $request->input('role');
-        $official = $request->input('official');
-        $password = $request->input('password');
-
+        $user->fname = $request->input('fname');
+        $user->lname = $request->input('lname');
+        $user->email = $request->input('email');
+        $user->position = $request->input('position');
+        $user->role = $request->input('role');
+        $user->official = $request->input('official');
+        $user->password = $request->input('password');
+        $user->save();
         return redirect()->back()->with('status','Users added successfully');
     }
 }
