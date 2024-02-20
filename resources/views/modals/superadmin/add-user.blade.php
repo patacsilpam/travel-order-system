@@ -12,19 +12,19 @@
                     <strong style="color:#3354F4; font-size:1.1rem">Personal Details</strong>
                     <div class="form-group my-2">
                         <label for="user-firstname">First Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="user-firstname" placeholder="Enter First Name" required>
+                        <input type="text" name="fname" class="form-control" id="user-firstname" placeholder="Enter First Name" required>
                     </div>
                     <div class="form-group my-2">
                         <label for="user-lastname">Last Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="user-lastname" placeholder="Enter Last Name" required>
+                        <input type="text" name="lname" class="form-control" id="user-lastname" placeholder="Enter Last Name" required>
                     </div>
                     <div class="form-group my-2">
                         <label for="user-position">Position <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="user-position" placeholder="Enter Position" required>
+                        <input type="text" name="position" class="form-control" id="user-position" placeholder="Enter Position" required>
                     </div>
                     <div class="form-group my-2">
                         <label for="user-role">Role <span class="text-danger">*</span></label>
-                        <select class="form-control" id="user-role" required>
+                        <select class="form-control" name="role" id="user-role" required>
                             <option selected disabled>Please select</option>
                             <option value="Normal User">Normal User</option>
                             <option value="Superadmin">Superadmin</option>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-group my-2">
                         <label for="user-division">Official</label>
-                        <select class="form-control" id="user-division">
+                        <select class="form-control" name="official" id="user-division">
                             <option selected disabled>Please select</option>
                             <option value="Empoyee">Empoyee</option>
                             <option value="CDO">CDO</option>
@@ -49,11 +49,11 @@
                     </div>
                     <div class="form-group my-2">
                         <label for="user-email-address">Email address <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" id="user-email-address" placeholder="Enter email address" required>
+                        <input type="email" name="email" class="form-control" id="user-email-address" placeholder="Enter email address" required>
                     </div>
                     <div class="form-group my-2">
                         <label for="user-password">Password <span class="text-danger">*</span></label>
-                        <input type="password" class="form-control" id="user-password" placeholder="Enter Password" size="8" required>
+                        <input type="password" name="password" class="form-control" id="user-password" placeholder="Enter Password" size="8" required>
                     </div>
                 </div>
                 <div class="modal-footer">
