@@ -15,25 +15,30 @@
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Position</th>
+                <th scope="col">Role</th>
                 <th scope="col">Office</th>
                 <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>juandelacruz</td>
-                <td>Juan</td>
-                <td>Dela Cruz</td>
-                <td></td>
-                <td></td>
-                <td>
-                    <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#editUser" style="background:#3BC77C" title="Edit User Information"><i class='bx bx-edit-alt' ></i></button>
-                    @include('modals.superadmin.edit-user')
-                    <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#removeUser" style="background:#CD2828" title="Remove User"><i class='bx bx-trash-alt' ></i></button>
-                    @include('modals.superadmin.delete-user')
-                </td>
-            </tr>
+            @foreach ($users as $user)
+                <tr>
+                    <th scope="row">{{ $user->id}}</th>
+                    <td>{{ $user->email}}</td>
+                    <td>{{ $user->fname}}</td>
+                    <td>{{ $user->lname}}</td>
+                    <td>{{ $user->position}}</td>
+                    <td>{{ $user->role}}</td>
+                    <td>{{ $user->official}}</td>
+                    <td>
+                        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#editUser" style="background:#3BC77C" title="Edit User Information"><i class='bx bx-edit-alt' ></i></button>
+                        @include('modals.superadmin.edit-user')
+                        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#removeUser" style="background:#CD2828" title="Remove User"><i class='bx bx-trash-alt' ></i></button>
+                        @include('modals.superadmin.delete-user')
+                    </td>
+                </tr>
+            @endforeach
+            
             
         </tbody>
     </table>
