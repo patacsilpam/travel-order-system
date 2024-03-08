@@ -9,9 +9,13 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    public function show(){
-
+    public function showAllUsers(){
         $users = User::all();
+        return view('superadmin.users', compact('users'));
+    }
+
+    public function editUser($id){
+        $get = User::find($id);
         return view('superadmin.users', compact('users'));
     }
 
