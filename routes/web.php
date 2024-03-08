@@ -47,8 +47,9 @@ Route::get('/superadmin/officials', function () {
 /*Route::get('/superadmin/users', function () {
     return view('superadmin.users');
 });*/
-Route::get('/superadmin/users', [UserController::class, 'show']);
+Route::get('/superadmin/users', [UserController::class, 'showAllUsers']);
 Route::post('/superadmin/users', [UserController::class, 'store']);
+Route::get('/superadmin/users/{id}', [UserController::class, 'editUser']);
 
 
 Route::get('/superadmin/settings/position', function () {
