@@ -31,7 +31,7 @@
                     <td>{{ $user->role}}</td>
                     <td>{{ $user->official}}</td>
                     <td>
-                        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#editUser" style="background:#3BC77C" title="Edit User Information"><i class='bx bx-edit-alt' ></i></button>
+                        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#editUser/{{$user->id}}" style="background:#3BC77C" title="Edit User Information"><i class='bx bx-edit-alt' ></i></button>
                         @include('modals.superadmin.edit-user')
                         <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#removeUser" style="background:#CD2828" title="Remove User"><i class='bx bx-trash-alt' ></i></button>
                         @include('modals.superadmin.delete-user')
