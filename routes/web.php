@@ -39,6 +39,7 @@ Route::get('/superadmin/divisions', function () {
     return view('superadmin.division');
 });
 
+
 Route::get('/superadmin/officials', function () {
     return view('superadmin.official');
 });
@@ -48,6 +49,7 @@ Route::get('/superadmin/officials', function () {
 });*/
 Route::get('/superadmin/users', [UserController::class, 'show']);
 Route::post('/superadmin/users', [UserController::class, 'store']);
+
 
 Route::get('/superadmin/settings/position', function () {
     return view('superadmin.position');
