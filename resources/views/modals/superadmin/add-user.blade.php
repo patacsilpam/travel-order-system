@@ -38,13 +38,19 @@
                     <div class="form-group my-2">
                         <label for="user-division">Official</label>
                         <select class="form-control" name="official" id="user-division">
-                            <option selected disabled>Please select</option>
-                            <option value="Empoyee">Empoyee</option>
-                            <option value="CDO">CDO</option>
-                            <option value="Provincial Officer">Provincial Officer</option>
-                            <option value="AFSD Chief">AFSD Chief</option>
-                            <option value="TMSD Chief">TMSD Chief</option>
-                            <option value="Regional Director">Regional Director</option>
+                            <option value="Dingras CSC">Dingras CSC</option>
+                            <option value="Ilocos Norte PO">Ilocos Norte PO</option>
+                            <option value="Banayoyo CSC">Banayoyo CSC</option>
+                            <option value="Banayoyo CSC">Tagudin CSC</option>
+                            <option value="Ilocos Sur PO">Ilocos Sur PO</option>
+                            <option value="Sudipen CSC">Sudipen CSC</option>
+                            <option value="Pugo CSC">Pugo CSC</option>
+                            <option value="Pangasinan PO">Pangasinan PO</option>
+                            <option value="Sison CSC">Sison CSC</option>
+                            <option value="Urdaneta CSC">Urdaneta CSC</option>
+                            <option value="Regional Office - AFSD">Regional Office - AFSD</option>
+                            <option value="Regional Office - TMSD">Regional Office - TMSD</option>
+                            <option value="Regional Office - ORD">Regional Office - ORD</option>
                         </select>
                     </div>
                     <div class="form-group my-2">
