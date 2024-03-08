@@ -10,7 +10,9 @@ class UserController extends Controller
 {
     //
     public function show(){
-        return view('superadmin.users');
+
+        $users = User::all();
+        return view('superadmin.users', compact('users'));
     }
 
     public function store(Request $request){
