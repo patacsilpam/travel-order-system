@@ -12,8 +12,10 @@
                     <div>
                         <span class="text-title p-3">Users</span><hr>
                     </div>
-                    <div  class="p-1">
-                        <p style="margin-top:-7px; margin-left:10px;">More Info <i class='bx bx-right-arrow-circle' style="font-size: 1.2rem"></i></p>
+                    <div  class="p-1 ">
+                        <a href="{{ url('/superadmin/users') }}" class="text-decoration-none d-flex align-items-center">
+                           More Info <i class='bx bx-right-arrow-circle' style="font-size: 1.2rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -31,7 +33,9 @@
                         <span class="text-title p-3">Travel Orders</span><hr>
                     </div>
                     <div  class="p-1">
-                        <p style="margin-top:-7px; margin-left:10px;">More Info <i class='bx bx-right-arrow-circle' style="font-size: 1.2rem"></i></p>
+                        <a href="{{ url('/superadmin/travel-orders') }}" class="text-decoration-none d-flex align-items-center">
+                           More Info<i class='bx bx-right-arrow-circle' style="font-size: 1.2rem"></i>
+                        </a>
                     </div>
                 </div>
             </div>
