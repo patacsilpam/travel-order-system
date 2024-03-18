@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\superadmin\PositionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Superadmin\UserController;
 /*
@@ -52,9 +53,8 @@ Route::post('/superadmin/users', [UserController::class, 'store']);
 Route::get('/superadmin/users/{id}', [UserController::class, 'editUser']);
 
 
-Route::get('/superadmin/settings/position', function () {
-    return view('superadmin.position');
-});
+Route::get('/superadmin/settings/position', [PositionController::class, 'showAllPositions']);
+Route::post('/superadmin/settings/position',[PositionController::class, 'store']);
 
 Route::get('/superadmin/settings/role', function () {
     return view('superadmin.role');
