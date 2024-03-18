@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group my-2">
                         <label for="user-password">Password <span class="text-danger">*</span></label>
-                        <input type="password" class="form-control" id="user-password" placeholder="Enter Password" size="8" required>
+                        <input type="password" class="form-control" id="user-password" placeholder="Enter Password" size="8">
                     </div>
                 </div>
                 <div class="modal-footer">
