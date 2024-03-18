@@ -18,19 +18,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Lorem Ipsum</td>
-                <td>Lorem Ipsum</td>
-                <td>Yes</td>
-                <td>
-                    <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#editPosition" style="background:#3BC77C" title="Edit User Information"><i class='bx bx-edit-alt' ></i></button>
-                    @include('modals.superadmin.edit-position')
-                    <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#removePosition" style="background:#CD2828" title="Remove User"><i class='bx bx-trash-alt' ></i></button>
-                    @include('modals.superadmin.delete-position')
-                </td>
-            </tr>
-            
+            @foreach ($positions as $position)
+                <tr>
+                    <th scope="row">{{ $position->id}}</th>
+                    <td>{{ $position->position}}</td>
+                    <td>{{ $position->description}}</td>
+                    <td>{{ $position->isAuthorize}}</td>
+                    <td>
+                        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#editPosition" style="background:#3BC77C" title="Edit User Information"><i class='bx bx-edit-alt' ></i></button>
+                        @include('modals.superadmin.edit-position')
+                        <button type="button" class="btn text-white my-2" data-toggle="modal" data-target="#removePosition" style="background:#CD2828" title="Remove User"><i class='bx bx-trash-alt' ></i></button>
+                        @include('modals.superadmin.delete-position')
+                    </td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 </div>
