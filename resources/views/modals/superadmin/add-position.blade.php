@@ -6,15 +6,16 @@
                 <h5 class="modal-title" id="addPosition">Add Position</h5>
                 <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close"><span class="bg-danger rounded text-white py-1 px-2" aria-hidden="true">&times;</span></button>
             </div>
-            <form>
+            <form action="{{url('/superadmin/settings/position') }}" method="POST">
+                @csrf
                 <div class="modal-body">
                     <div class="form-group my-2">
                         <label for="position">Position<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="position" placeholder="Enter Position" required>
+                        <input type="text" name="position" class="form-control" id="position" placeholder="Enter Position" required>
                     </div>
                     <div class="form-group my-2">
                         <label for="description">Description</label>
-                        <textarea class="form-control" placeholder="Add a description here..." id="description" style="height: 100px"></textarea>
+                        <textarea class="form-control" name="description" placeholder="Add a description here..." id="description" style="height: 100px" required></textarea>
                     </div>
                     <div class="form-check my-2">
                         <div style="margin-left: -22px">
@@ -23,10 +24,10 @@
                               </label>
                         </div>
                         <div>
-                            <input type="radio"  class="form-check-input" name="isAuthorized" value="Yes" required>Yes
+                            <input type="radio"  class="form-check-input" name="isAuthorize" value="Yes" required>Yes
                         </div>
                         <div>
-                            <input type="radio"  class="form-check-input" name="isAuthorized" value="No" required>No
+                            <input type="radio"  class="form-check-input" name="isAuthorize" value="No" required>No
                         </div>
                     </div>
                 </div>
